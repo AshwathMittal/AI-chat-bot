@@ -4,5 +4,6 @@ This is just an example of chatbot made with JavaScript. This is works on the co
 # Node Modules
 After cloning this repo
 FIRST USE `npm init -y`.
-Then use `npm i express ejs body-parser brain.js` to install node modules
+Then use `npm i express ejs body-parser brain.js` to install node modules.
 
+`npm start`
