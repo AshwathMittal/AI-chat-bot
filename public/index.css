@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    outline: none;
+    border: none;
+    }
+    body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: linear-gradient(SlateBlue, MediumSeaGreen);
+    }
+    .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    /* chat box section */
+    .chat-box {
+    width: 400px;
+    height: 150%;
+    background-color: MediumSeaGreen;
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+    }
+    /* about client */
+    .client {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 80px;
+    background-color:#533CE1;
+    padding: 15px;
+    }
+    .client img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    }
+    .client-info {
+    color: #fff;
+    padding: 15px;
+    }
+    .client-info p {
+    color: #008000;
+    font-weight: bold;
+    font-size: 0.8em;
+    }
+
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid  SlateBlue;
+  border-right: 16px solid SlateBlue;
+  border-bottom: 16px solid MediumSeaGreen;
+  border-left: 16px solid MediumSeaGreen;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+    /* chat section */
+    .chats {
+    width: 100%;
+    padding: 0 15px;
+    color: #fff;
+    position: relative;
+    font-size: 0.9em;
+    }
+    .client-chat {
+    width:40%;
+    word-wrap: break-word;
+    background-color: white;
+    color: black;
+
+    padding: 7px 10px;
+    border-radius: 10px 10px 10px 0;
+    margin: 10px 0;
+    }
+    .my-chat {
+    color: black;
+    width: 40%;
+    word-wrap: break-word;
+    background-color:DodgerBlue;
+    padding: 7px 10px;
+    border-radius: 10px 10px 0 10px;
+    margin: 5px 0 5px auto;
+    }
+    /* input section */
+    .chat-input {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 65px;
+    background-color: #239B56 ;
+    padding: 15px;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    }
+    .chat-input input {
+    width: calc(100% - 40px);
+    height: 100%;
+    color: none;
+    border-radius: 50px;
+    color: #000;
+    font-size: 1.2em;
+    padding: 0 15px;
+    }
+    .send-btn {
+    width: 40px;
+    height: 40px;
+    background-color:  linear-gradient(SlateBlue, MediumSeaGreen);;
+    overflow: hidden;
+    position: relative;
+    margin-left: 5px;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+    border-radius: 100px;
+    }
+    .send-btn:active {
+    transform: scale(0.85);
+    }
+    .send-btn img {
+    width: 100%;
+    height: 100%;
+    }
+    /* chat box button section */
+    .chat-btn {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color:  linear-gradient(SlateBlue, MediumSeaGreen);;
+    cursor: pointer;
+    overflow: hidden;
+    position: fixed;
+    bottom: 20px;
+    }
+    .chat-btn img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 5px;
+    transition: 0.4s ease-in-out;
+    }
+    .chat-btn:hover img {
+    transform: rotate(60deg);
+    }
+    .ddd{
+    visibility: hidden;
+    }
+    /* The Modal (background) */
+    .modal {
+    display: none; /* Hidden by default */
+    overflow: auto; /* Enable scroll if needed */
+    }
+    /* Modal Content */
+    .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    }
+    /* The Close Button */
+    .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 48px;
+    font-weight: bold;
+    }
+    .close:hover,
+    .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    }

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>AI BOT</title>
+    <link rel="stylesheet" href="/index.css">
+
+  </head>
+
+  <body>
+
+    <body onload="load()">
+      <div onload="load()"id="lod">
+      <p>  It might take a while to load... Please wait.</p>
+      <br>
+      <center>
+          <div class="loader">
+            </div>
+      </center>
+
+      </div>
+      <div id = "myDIV"class="container">
+        <div id="myModal" class="modal">
+          <p>
+            <span class="close">&times;</span>
+          </p>
+          <div class="chat-box">
+            <div class="client">
+              <div class="client-info">
+                <h2>Chat Bot</h2>
+                <p>online</p>
+              </div>
+            </div>
+            <div class="chats">
+              <p id="chatLog"><br></p>
+              <br><br><br><br>
+            </div>
+            <div class="chat-input">
+              <input type="text" placeholder="Enter Message" id="userBox" onkeydown="if (event.keyCode == 13) {netrun()}"/>
+              <button class="send-btn" onclick="netrun()">
+              <img src="/send-removebg-preview.png" alt="send-btn">
+              <-- <img src="/logo.png" alt="logo" /> -->
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="chat-btn">
+        <button>
+        <img src="https://raw.githubusercontent.com/AshwathMittal/first-chat-bot/main/Circle-icons-chat.svg.png" id="myBtn" alt="chat box icon btn">
+        </button>
+      </div>
+      </div>
+
+<script src="https://unpkg.com/brain.js@2.0.0-beta.2/dist/brain-browser.min.js" charset="utf-8"></script>
+<script src="/index.js" charset="utf-8"></script>
+</body>
+
+</html>
