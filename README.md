@@ -6,4 +6,4 @@ After cloning this repo
 FIRST USE `npm init -y`.
 Then use `npm i express ejs body-parser brain.js` to install node modules.
 
-`npm start`
+`node app.js` to run the app
