@@ -1,6 +1,5 @@
 # AI-chat-bot
-This is just an example of chatbot made with JavaScript. This is works on the concept of Machine Learning.
-
+This is an example of a chat bot involving machine learning built using Brain.JS library in NODE JS.
 # Node Modules
 After cloning this repo
 FIRST USE `npm init -y`.
